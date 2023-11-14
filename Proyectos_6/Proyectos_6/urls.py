@@ -1,5 +1,5 @@
 """
-URL configuration for Proyecto_6 project.
+URL configuration for Proyectos_6 project.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/4.2/topics/http/urls/
@@ -16,9 +16,13 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from proyecto_app import views
+from proyecto_6_app import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.index)
+    path('',views.index),
+    path('proyectos/', views.listadoProyecto),
+    path('agregar/', views.agregarProyecto),
+    path('eliminar/<int:IN_id>', views.eliminarProyecto),
+    path('modificar/<int:IN_id>', views.modificarProyecto)
 ]
