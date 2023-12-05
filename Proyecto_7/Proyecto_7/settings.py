@@ -82,7 +82,7 @@ pymysql.install_as_MySQLdb()
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'proyecto_7',
+        'NAME': 'django_proyecto',
         'USER': 'root',
         'PASSWORD': ''
     }
