@@ -1,8 +1,10 @@
 from django.db import models
 
 # Create your models here.
-class Empleados(models.Model):
+class Estudiante(models.Model):
     id = models.AutoField(primary_key=True)
     nombre = models.CharField(max_length=50)
+    curso = models.CharField(max_length=20)
     email = models.EmailField()
-    sueldo = models.DecimalField(max_digits=10, decimal_places=2)
+    notas = models.DecimalField(max_digits=5, decimal_places=2)
+    
